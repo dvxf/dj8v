@@ -39,4 +39,4 @@ TOPLEVEL = tb
 MODULE = test
 
 # include cocotb's make rules to take care of the simulator setup
-include Makefile.sim
+include $(shell cocotb-config --makefiles)/Makefile.sim
